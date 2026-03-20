@@ -1,1 +1,7 @@
 This is a file
+Go to the contaioer:
+docker run -it --mount type=bind,source="/workspaces/CITS4407",target=/home/stud/perm mjw263/cits4407_2024:v1
+open vim: vim wannaopen.sh,close&save:Esc then ":wq".
+Run sh:chmod u+x wannarn.sh;Then ./wannarun.sh
+Save:0 sudo chown -R $(whoami):$(whoami) lab3;chmod -R u+rwX lab3;
+ 1 git status; 2 git add lab3;3 git commit -m "Complete lab3";4 git push
