@@ -1,0 +1,1 @@
+#This document recors selected AI promopts used during Assignment 2.

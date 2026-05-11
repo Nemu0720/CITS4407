@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo"Hi,it is clean"
+#use if for anti-bugging.
+#Maybe I want do clean with awk to grab data in need.
