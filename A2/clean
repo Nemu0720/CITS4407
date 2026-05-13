@@ -1,4 +1,33 @@
 #!/usr/bin/env bash
-echo"Hi,it is clean"
+
 #use if for anti-bugging.
+if [[ $# -ne 1 ]]
+then
+    echo "Error: No input csv file provided"
+    exit 1
+fi
+
+if [[ ! -f "$1" ]]
+then
+    echo "ERROR: Input file not found in current directory"
+    exit 1
+fi
+
+if [[ "$1" != *.csv ]]
+then
+    echo "ERROR: Input file excepted csv formate"
+    exit 1
+fi
+
+col_number=$( head -n 1 "$1" | awk -F, '{print NF}')
+
+
+if [[ $col_number -ne 7 ]]
+then   
+    echo "ERROR: Expected 7 columns in the header"
+    exit 1
+fi
+
+
+
 #Maybe I want do clean with awk to grab data in need.
