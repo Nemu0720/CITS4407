@@ -25,3 +25,29 @@ Why is it empty?
 
 **Purpose:**  
 To debug an awk syntax error. I learned that `print NF` needs a space between `print` and `NF`; otherwise, awk treats `printNF` as a variable name.
+
+## Prompt 4
+
+**Prompt:**  
+For deleting duplicate rows in awk, can I use an array such as `seen[$0]`? Is there a simpler or more readable way to write this?
+
+**Purpose:**  
+To check the awk syntax for removing fully duplicate rows while preserving the first occurrence.
+
+# Prompt 5
+
+**Prompt:**  
+My output still showed many rows with the same `video_id`. Does this mean my duplicate-row check is wrong?
+
+**Purpose:**  
+To clarify the difference between fully duplicate rows and rows that share the same `video_id` but have different values in other columns.
+
+---
+
+## Prompt 6
+
+**Prompt:**  
+When comparing my cleaned CSV with the reference cleaned CSV, the files still looked different. How can I compare them while ignoring case differences and hidden carriage-return characters?
+
+**Purpose:**  
+To debug file-format and comparison issues. I learned to use commands such as `cat -vet`, `tr -d '\r'`, `tr 'A-Z' 'a-z'`, `sort`, and `diff` to check whether differences came from cleaning logic or from formatting/case differences.
