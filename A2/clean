@@ -49,4 +49,4 @@ NR>1{
         }
         seen[result] = seen[result] + 1
     }
-}' "$1" > my_clean.csv
+}' "$1" > trending_videos_clean.csv
